@@ -14,7 +14,6 @@ use Vich\UploaderBundle\Mapping\Annotation as Vich;
 /**
  * @ORM\Entity(repositoryClass="App\Repository\PropertyRepository")
  * @UniqueEntity("title")
- * @Vich\Uploadable
  */
 class Property
 {
@@ -38,7 +37,6 @@ class Property
 
     /**
      * @var File|null
-     * @Vich\UploadableField(mapping="property_image", fileNameProperty="filename")
      */
     //private $imageFile;
 
