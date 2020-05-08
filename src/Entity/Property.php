@@ -40,7 +40,7 @@ class Property
      * @var File|null
      * @Vich\UploadableField(mapping="property_image", fileNameProperty="filename")
      */
-    private $imageFile;
+    //private $imageFile;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -385,20 +385,20 @@ class Property
     /**
      * @return File|null
      */
-    public function getImageFile(): ?File
+   /* public function getImageFile(): ?File
     {
         return $this->imageFile;
-    }
+    }*/
 
     /**
      * @param File|null $imageFile
      * @return Property
      */
-    public function setImageFile(?File $imageFile): Property
+   /* public function setImageFile(?File $imageFile): Property
     {
         $this->imageFile = $imageFile;
         return $this;
-    }
+    }*/
 
     public function getUpdatedAt(): ?\DateTimeInterface
     {
