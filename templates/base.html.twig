@@ -25,11 +25,11 @@
             {% if app.user %}
                 <li class="nav-item">
                     <a class="nav-link {% if current_menu is defined and current_menu == 'admin_properties' %} active {% endif %}"
-                       href="{{ path('admin.property.index') }}">Les biens</a>
+                       href="{{ path('admin.property.index') }}">Gérer les biens</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {% if current_menu is defined and current_menu == 'admin_options' %} active {% endif %}"
-                       href="{{ path('admin.option.index') }}">Les options</a>
+                       href="{{ path('admin.option.index') }}">Gérer les options</a>
                 </li>
             {% endif %}
         </ul>
